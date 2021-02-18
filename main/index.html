@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<title>SoDoHo Main</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+  background-color:black;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-b, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('main.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("https://www.stratospherenetworks.com/blog/wp-content/uploads/2019/04/servers-IT-infrastructure.jpg");
+  min-height: 400px;
+}
+
+/* b image (content) */
+.bgimg-b {
+  background-image: url("https://i.ytimg.com/vi/XqlF5qEAobI/maxresdefault.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("https://specials-images.forbesimg.com/imageserve/5e712c8237d0440006bcba3e/960x0.jpg?fit=scale");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+
+  #navbar {background-color:darkslategrey;}
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="http://sodoho.ddns.net/" class="w3-bar-item w3-button">ZONE</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> SERVER</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">SERVER</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT SoDoHo</h3>
+  <p class="w3-center"><em>SoDoHo is our project.</em></p>
+  <p>SoDoHo was a server we made on April since we wanted a place to play and I (jnsl) knew I could do the server back end, ketch could do the Discord server, be gone with the third party apps, and olozzy as the community leader. CGSDH was a group we were all already part of so we named it after that. SoDoHo had gone thru multiple months on a host we were just testing but we decided to move to this new host. I also took this opportunity to add more integrations and features to make SoDoHo what it is today.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>CGSDH Server</b></p>
+      <img src="sodoho.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="CGSDH" width="333" height="333" >
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <br><br><br><br><p>SoDoHo Started from a fun project to something that blew up. We did not expect this. But this extended growth pushed us to do more and now we are here. 
+        While our 1st Winter Tournament did not go as well as we wanted, it was a good learning lesson for us all. It also pushed me to start this new host and these
+      new integrations as part of the project. We aim to make the experience better for the end user.</p>
+    </div>
+  </div>
+ <center><p style="font-size:30px;"><a href="https://docs.google.com/spreadsheets/d/12-yRISeLSSh9zplP9HtVNuUGyyApZuVexi4fkNWPA3M/edit?usp=sharing">View Our Server Roster</p></a></center>  
+ <button class="w3-button w3-block w3-teal" onclick="location.href='https://docs.google.com/spreadsheets/d/12-yRISeLSSh9zplP9HtVNuUGyyApZuVexi4fkNWPA3M/edit?usp=sharing'">SERVER ROSTER</button>
+</div>
+
+<div class="w3-row w3-center w3-padding-16" style="background-color: #111111; color: white;">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">7+</span><br>
+    Months of Operation
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">1</span><br>
+    Tournament Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">200+</span><br>
+    Members
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">PHP5000+</span><br>
+    Burnt out of Jansel's wallet
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">SERVER OPS</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center"> SERVER CONVENIENCE </h3>
+  <p class="w3-center"><em>Just Click on Em and you'll get to their pages.<br> Images should be self explanatory lmao</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="https://yt3.ggpht.com/ytc/AAUvwngytTGNxTh-n4C6TLomue6cb2bYni4XMnzG1m0mOA=s900-c-k-c0x00ffffff-no-rj" style="width:100%" onclick="location.href='https://discord.gg/6t46ma5e8d';" class="w3-hover-opacity" alt="discord"><p>Discord</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="hammer time lizbeth2.gif" style="width:100%" onclick="location.href='http://45.76.155.140/sb/';" class="w3-hover-opacity" alt="BANS"><p>Lisbeth Decides Your Fate</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://www.dragontacticalinternational.com/wp-content/uploads/2020/05/bad-target.jpg" style="width:100%" onclick="location.href='http://45.76.155.140:5000/';" class="w3-hover-opacity" alt="Statistics"><p>Stats</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://i.pinimg.com/474x/78/5a/a8/785aa8d901468977b1790cb0ee67b341.jpg" style="width:100%" onclick="location.href='https://steamcommunity.com/groups/CGSDH'" class="w3-hover-opacity" alt="steam"> <p> Main Steam Group </p>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="/main/sodohoac.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="def"><p>SoDoHo Defense System</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/main/sodohocamp.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Religious"><p>SoDoHo Religious Camp</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/main/sodohowtc.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="hq"><p>SoDoHo HQ Center</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/main/sodohoboat.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing"><p>Boat with Banana</p>
+    </div>
+    <img src="https://seeklogo.com/images/C/csgo-logo-CAA0A4D48A-seeklogo.com.png" style="width:25%" onclick="location.href='steam://connect/139.99.124.120:28249';" class="w3-hover-opacity" alt="Sodog"><br>
+    <button class="w3-button w3-padding-large w3-light-grey" onclick="location.href='steam://connect/139.99.124.120:28249';" style="margin-top:10px">JOIN THE SERVER</button>
+  </div>
+</div>
+
+<!-- creators -->
+<div class="bgimg-b w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">Check Out These Content Creators!</span>
+  </div>
+</div>
+<!-- creators (youtube link) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center"> Some of the content creators that play on SoDoHo </h3>
+  <p class="w3-center"><em>Very epic content @youtube.<br> They're good</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="/main/logo/olozzy.png" style="width:100%" onclick="location.href='https://www.youtube.com/channel/UCewSko8AWsi8RsrlOgvHX9Q';" class="w3-hover-opacity" alt="olo"><p>Olozzy</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/main/logo/jnsl80.jpg" style="width:100%" onclick="location.href='https://www.youtube.com/channel/UCnkJywXcHzDp7KH2H-bnv4g';" class="w3-hover-opacity" alt="jnsl80"><p>Jansel80</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/main/logo/ELITE.jpg" style="width:100%" onclick="location.href='https://www.youtube.com/channel/UCwIt_uZaUetsTRo6heUa4sQ';" class="w3-hover-opacity" alt="el1te"><p>EL1TE</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://yt3.ggpht.com/ytc/AAUvwniMrxw2dL69LPqVN9R-tD0RTw3Eqxc6qi6GVx0lIA=s88-c-k-c0x00ffffff-no-rj" style="width:100%" onclick="location.href='https://www.youtube.com/channel/UCPDuMz0QknZnfLenGokkLXw';" class="w3-hover-opacity" alt="koza"> <p>koza</p>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="https://yt3.ggpht.com/ytc/AAUvwnj8AdfJa9G1F0sJo0x72tX6uXgkrrI6XLhn_R8kdA=s88-c-k-c0x00ffffff-no-rj" style="width:100%" onclick="location.href='hhttps://www.youtube.com/channel/UCeIfir-hO8uBVBoXtod7NwA';" class="w3-hover-opacity" alt="The mist"><p>kyzer</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/avatars/bb/bb86754b0bb4bbe3680eeb24f3f82a7d6c7f023c_full.jpg" style="width:100%" onclick="location.href='https://www.youtube.com/channel/UCyjIl6rEDQ4dqJ16EZqKNVA';" class="w3-hover-opacity" alt="be gone"><p>tappeh</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://yt3.ggpht.com/ytc/AAUvwnjwrYaoxvLDfPFxoj_QGyyYXcZrWJ99JHHNxGlo_Q=s88-c-k-c0x00ffffff-no-rj" style="width:100%" onclick="location.href='https://www.youtube.com/channel/UC4-hIWkP8RRuVirAIERnoFA';" class="w3-hover-opacity" alt="zocra"><p>zocra</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/f952b851-b5d8-4dfa-9877-f14efcac962e-profile_image-70x70.png" style="width:100%" onclick="location.href='https://www.twitch.tv/vangz_z';" class="w3-hover-opacity" alt="Sailing"><p>vangz</p>
+    </div>
+    <button class="w3-button w3-padding-large w3-light-grey" onclick="location.href='steam://connect/139.99.124.120:28249';" style="margin-top:64px">JOIN THE SERVER</button>
+  </div>
+</div>
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">CONTACT US</h3>
+  <p class="w3-center"><em>Talk To Us!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> PH Owned | Singapore Hosted <br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Discord: <a href="https://discord.gg/6t46ma5e8d"> Join Us </a> <br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: cgsdhsodoho@gmail.com<br>
+      </div>
+      <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave us a note.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Back2TheTop</a>
+
+  <p>Powered by <a href="http://sodoho.ddns.net/" title="SODOHO" target="_blank" class="w3-hover-text-green">SoDoHo Servers</a></p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+    //signed by jansel. also used w3school very useful <333
+}
+</script>
+<p>made by jansel80 lmao</p>
+</body>
+</html>
